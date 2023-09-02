@@ -14,7 +14,10 @@
       <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="622.0" layoutY="615.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../assest/LoginPage.png" />
-         </image></ImageView>
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></ImageView>
       <TextField layoutX="352.0" layoutY="481.0" prefHeight="60.0" prefWidth="425.0" style="-fx-background-color: transparent;">
          <font>
             <Font size="18.0" />
@@ -35,5 +38,18 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <ImageView fitHeight="69.0" fitWidth="69.0" layoutX="530.0" layoutY="849.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="849.0">
+         <image>
+            <Image url="@../assest/faceIdIcon.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="535.0" layoutY="850.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
 </AnchorPane>
