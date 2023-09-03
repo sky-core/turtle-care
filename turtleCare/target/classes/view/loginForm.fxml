@@ -2,8 +2,10 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -28,16 +30,6 @@
             <Font size="18.0" />
          </font>
       </PasswordField>
-      <ImageView fitHeight="120.0" fitWidth="553.0" layoutX="299.0" layoutY="717.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="243.04779052734375" AnchorPane.leftAnchor="299.0" AnchorPane.rightAnchor="1068.0" AnchorPane.topAnchor="717.0">
-         <image>
-            <Image url="@../assest/LoginButton.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="328.0" layoutY="736.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="486.0" style="-fx-background-radius: 40; -fx-background-color: transparent;">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
       <ImageView fitHeight="69.0" fitWidth="69.0" layoutX="530.0" layoutY="849.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="849.0">
          <image>
             <Image url="@../assest/faceIdIcon.png" />
@@ -47,6 +39,25 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+      </Button>
+      <Label layoutX="671.0" layoutY="685.0" text=" FORGOT PASSWORD">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button layoutX="326.0" layoutY="739.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #00B4D8;-fx-background-radius: 40;" text="LOGIN">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="18.07" offsetX="1.0" offsetY="2.0" radius="7.0675" width="12.2" />
+         </effect>
       </Button>
    </children>
    <cursor>

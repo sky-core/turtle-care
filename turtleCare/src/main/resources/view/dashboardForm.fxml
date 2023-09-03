@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="776.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assest/Dashboard.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1499.0" layoutY="875.0" prefHeight="41.0" prefWidth="74.0" text="label2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="821.0" prefHeight="41.0" prefWidth="250.0" text="label1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="774.0" layoutY="820.0" prefHeight="41.0" prefWidth="177.0" text="label2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="875.0" prefHeight="41.0" prefWidth="250.0" text="label1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="774.0" layoutY="870.0" prefHeight="41.0" prefWidth="177.0" text="label2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="590.0" layoutY="921.0" prefHeight="41.0" prefWidth="177.0" text="View More" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="1499.0" layoutY="826.0" prefHeight="41.0" prefWidth="74.0" text="label2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

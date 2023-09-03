@@ -1,4 +1,5 @@
 package lk.ijse.controller;
 
-public class LoginFormController {
+
+public class LoginFormController{
 }
