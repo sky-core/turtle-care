@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -53,5 +55,13 @@
          </font>
       </Label>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="445.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane blendMode="OVERLAY" layoutX="281.0" layoutY="236.0" opacity="0.72" prefHeight="439.0" prefWidth="406.0" style="-fx-background-color: #FFFFFF;-fx-border-radius: 30">
+         <effect>
+            <DropShadow height="16.125" offsetX="1.0" offsetY="1.0" radius="7.928750000000001" spread="0.1" width="17.59" />
+         </effect>
+         <opaqueInsets>
+            <Insets bottom="54.0" left="54.0" right="54.0" />
+         </opaqueInsets>
+      </AnchorPane>
    </children>
 </AnchorPane>
