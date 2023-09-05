@@ -1,0 +1,14 @@
+.button {
+    background-color: #3498db; /* Default button color */
+    color: #ffffff; /* Default text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover state */
+.button:hover {
+    background-color: #000000; /* New button color on hover */
+    /* You can also change the text color on hover */
+    /* color: #ffffff; */
+}

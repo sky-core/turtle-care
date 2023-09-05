@@ -61,7 +61,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <JFXButton fx:id="btn1" buttonType="RAISED" layoutX="73.0" layoutY="368.0" onMouseEntered="#onMouseEntere" onMouseExited="#onMouseExited" opacity="0.59" prefHeight="46.0" prefWidth="262.0" style="-fx-background-color: #03045E; -fx-background-radius: 20;" text="Change Heat">
+            <JFXButton fx:id="btn1" buttonType="RAISED" layoutX="73.0" layoutY="368.0" onMouseEntered="#onMouseEntere" onMouseExited="#onMouseExited" opacity="0.59" prefHeight="46.0" prefWidth="262.0" style="-fx-background-color: #03045E; -fx-background-radius: 20;" stylesheets="@../style/dashboardButton1.css" text="Change Heat">
                <font>
                   <Font name="Bell MT" size="36.0" />
                </font>
