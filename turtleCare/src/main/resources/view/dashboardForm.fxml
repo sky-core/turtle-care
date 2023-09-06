@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
@@ -45,6 +46,11 @@
                         <Image url="@../assest/eggsRoom.png" />
                      </image>
                   </ImageView>
+                  <JFXButton fx:id="nevigateEggsRoom" buttonType="RAISED" layoutX="84.0" layoutY="319.0" opacity="0.4" prefHeight="46.0" prefWidth="236.0" style="-fx-background-radius: 20; -fx-background-color: #03045E;" text="Change Heat">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </JFXButton>
                </children>
             </Pane>
             <Pane layoutX="1038.0" layoutY="180.0" prefHeight="413.0" prefWidth="406.0">
@@ -158,12 +164,78 @@
                   <Font name="System Bold" size="42.0" />
                </font>
             </Label>
-            <Label fx:id="eggsRoomCelicus1" layoutX="1172.0" layoutY="422.0" text="0">
+            <Label fx:id="customersIn" layoutX="1172.0" layoutY="422.0" text="0">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Label>
+            <Label fx:id="customersOut" layoutX="1262.0" layoutY="422.0" text="100">
                <font>
                   <Font name="System Bold" size="42.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
+      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/homeIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/ticket.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="50.0" fitWidth="45.0" layoutX="154.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/employee.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/transaction.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="633.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/egg.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="903.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/setting.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="733.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/turtle.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="66.0" layoutX="143.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
    </children>
 </AnchorPane>
