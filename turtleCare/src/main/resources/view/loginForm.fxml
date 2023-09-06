@@ -48,7 +48,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-      <JFXButton buttonType="RAISED" layoutX="325.0" layoutY="737.0" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #00B4D8; -fx-background-radius: 40;" stylesheets="@../style/dashboardButton1.css" text="LOGIN">
+      <JFXButton buttonType="RAISED" layoutX="325.0" layoutY="737.0" prefHeight="60.0" prefWidth="480.0" style="-fx-background-color: #00B4D8; -fx-background-radius: 40;" stylesheets="@../style/buttonHovering.css" text="LOGIN">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
