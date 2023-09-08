@@ -5,20 +5,75 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1919.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1919.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
    <children>
       <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="406.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../assest/DashboardForm.png" />
          </image>
       </ImageView>
-      <Button layoutX="127.0" layoutY="213.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="130.0" layoutY="268.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="128.0" layoutY="327.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="128.0" layoutY="389.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="134.0" layoutY="439.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="127.0" layoutY="493.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="124.0" layoutY="956.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="homeBtn" layoutX="108.0" layoutY="208.0" mnemonicParsing="false" onAction="#homeBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/home.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="tiktBtn" layoutX="108.0" layoutY="304.0" mnemonicParsing="false" onAction="#tiktBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/tickets.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="empBtn" layoutX="108.0" layoutY="395.0" mnemonicParsing="false" onAction="#empBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/emp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="transBtn" layoutX="107.0" layoutY="486.0" mnemonicParsing="false" onAction="#transBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/transaction.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="eggBtn" layoutX="109.0" layoutY="579.0" mnemonicParsing="false" onAction="#eggBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/egg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="trtlBtn" layoutX="108.0" layoutY="667.0" mnemonicParsing="false" onAction="#trtlBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/turtle.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="setingBtn" layoutX="108.0" layoutY="921.0" mnemonicParsing="false" onAction="#setingBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane fx:id="bodyPane" layoutX="210.0" layoutY="73.0" prefHeight="947.0" prefWidth="1603.0" />
    </children>
 </AnchorPane>

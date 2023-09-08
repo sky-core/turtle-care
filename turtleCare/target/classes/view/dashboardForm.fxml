@@ -1,241 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.geometry.Rectangle2D?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1919.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
    <children>
-      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="718.0" layoutY="601.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="406.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@../assest/dashboard1.png" />
+            <Image url="@../assest/DashboardForm.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="228.0" layoutY="66.0" prefHeight="948.0" prefWidth="1619.0">
-         <children>
-            <ImageView fitHeight="942.0" fitWidth="1619.0" layoutX="-10.0" layoutY="13.0" pickOnBounds="true" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="13.0">
+      <Button fx:id="homeBtn" layoutX="108.0" layoutY="208.0" mnemonicParsing="false" onAction="#homeBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assest/rec.png" />
+                  <Image url="@../assest/naviBarIcons/home.png" />
                </image>
             </ImageView>
-            <Pane layoutX="338.0" layoutY="266.0" prefHeight="200.0" prefWidth="200.0" />
-            <Label layoutX="92.0" layoutY="112.0" text="Good Morning, Kavindu">
-               <font>
-                  <Font name="System Bold" size="38.0" />
-               </font>
-            </Label>
-            <Pane layoutX="92.0" layoutY="180.0" prefHeight="413.0" prefWidth="406.0">
-               <children>
-                  <ImageView fitHeight="413.0" fitWidth="406.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assest/div01.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-            <Pane layoutX="572.0" layoutY="180.0" prefHeight="413.0" prefWidth="406.0">
-               <children>
-                  <ImageView fitHeight="413.0" fitWidth="406.0" layoutX="9.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assest/eggsRoom.png" />
-                     </image>
-                  </ImageView>
-                  <JFXButton fx:id="nevigateEggsRoom" buttonType="RAISED" layoutX="84.0" layoutY="319.0" opacity="0.4" prefHeight="46.0" prefWidth="236.0" style="-fx-background-radius: 20; -fx-background-color: #03045E;" text="Change Heat">
-                     <font>
-                        <Font name="System Bold" size="24.0" />
-                     </font>
-                  </JFXButton>
-               </children>
-            </Pane>
-            <Pane layoutX="1038.0" layoutY="180.0" prefHeight="413.0" prefWidth="406.0">
-               <children>
-                  <ImageView fitHeight="413.0" fitWidth="406.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assest/cus.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-            <Pane layoutX="110.0" layoutY="653.0" prefHeight="220.0" prefWidth="646.0">
-               <children>
-                  <ImageView fitHeight="188.0" fitWidth="672.0" layoutX="-9.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-                     <viewport>
-                        <Rectangle2D />
-                     </viewport>
-                     <image>
-                        <Image url="@../assest/dashRec.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-            <Pane layoutX="810.0" layoutY="653.0" prefHeight="220.0" prefWidth="646.0">
-               <children>
-                  <ImageView fitHeight="188.0" fitWidth="672.0" layoutX="1.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-                     <viewport>
-                        <Rectangle2D />
-                     </viewport>
-                     <image>
-                        <Image url="@../assest/dashRec.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-            <Label layoutX="112.0" layoutY="632.0" text="Recent Donations">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label layoutX="822.0" layoutY="632.0" text="Today Report">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label layoutX="872.0" layoutY="712.0" text="Today Customer Count">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label layoutX="872.0" layoutY="752.0" text="Today Income">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="tIncome" layoutX="1222.0" layoutY="752.0" opacity="0.8" text="Rs. 0.00">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="tCustomerCount" layoutX="1222.0" layoutY="712.0" opacity="0.8" text="0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="rDonationName1" layoutX="162.0" layoutY="712.0" text="label">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="rDonationName2" layoutX="162.0" layoutY="762.0" text="label">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="rDonationPrice1" layoutX="582.0" layoutY="712.0" text="label">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="rDonationPrice2" layoutX="582.0" layoutY="762.0" text="label">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="division" layoutX="162.0" layoutY="382.0" text="Div 0 ">
-               <font>
-                  <Font name="System Bold" size="32.0" />
-               </font>
-            </Label>
-            <Label fx:id="daysForHatch" layoutX="162.0" layoutY="422.0" text="0 Days">
-               <font>
-                  <Font name="System Bold" size="42.0" />
-               </font>
-            </Label>
-            <Label layoutX="162.0" layoutY="482.0" text="for Hatching">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font>
-            </Label>
-            <Label fx:id="viewMoreDash" layoutX="372.0" layoutY="812.0" opacity="0.75" text="View More">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Label>
-            <Label fx:id="eggsRoomCelicus" layoutX="672.0" layoutY="422.0" text="0.00">
-               <font>
-                  <Font name="System Bold" size="42.0" />
-               </font>
-            </Label>
-            <Label fx:id="customersIn" layoutX="1172.0" layoutY="422.0" text="0">
-               <font>
-                  <Font name="System Bold" size="42.0" />
-               </font>
-            </Label>
-            <Label fx:id="customersOut" layoutX="1262.0" layoutY="422.0" text="100">
-               <font>
-                  <Font name="System Bold" size="42.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assest/homeIcon.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assest/ticket.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="50.0" fitWidth="45.0" layoutX="154.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assest/employee.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assest/transaction.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="633.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assest/egg.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="903.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assest/setting.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="154.0" layoutY="733.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assest/turtle.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="66.0" layoutX="143.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
+         </graphic></Button>
+      <Button fx:id="tiktBtn" layoutX="108.0" layoutY="304.0" mnemonicParsing="false" onAction="#tiktBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/tickets.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="empBtn" layoutX="108.0" layoutY="395.0" mnemonicParsing="false" onAction="#empBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/emp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="transBtn" layoutX="107.0" layoutY="486.0" mnemonicParsing="false" onAction="#transBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/transaction.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="eggBtn" layoutX="109.0" layoutY="579.0" mnemonicParsing="false" onAction="#eggBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/egg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="trtlBtn" layoutX="108.0" layoutY="667.0" mnemonicParsing="false" onAction="#trtlBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/turtle.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="setingBtn" layoutX="108.0" layoutY="921.0" mnemonicParsing="false" onAction="#setingBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/naviBarIcons/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

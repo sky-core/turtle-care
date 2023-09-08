@@ -1,30 +1,69 @@
 package lk.ijse.controller;
 
-import com.jfoenix.controls.JFXButton;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.layout.Background;
-import javafx.scene.paint.Color;
+import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 
-import javax.swing.*;
-import java.awt.event.MouseEvent;
 
 public class DashboardFormController {
     @FXML
-    private JFXButton btn1;
+    private AnchorPane rootPane;
+    @FXML
+    private AnchorPane bodyPane;
+    @FXML
+    private Button eggBtn;
 
     @FXML
-    void onMouseEntere(MouseEvent event) {
-        btn1.setBackground(Background.fill(Color.GREEN));
+    private Button empBtn;
+
+    @FXML
+    private Button homeBtn;
+
+    @FXML
+    private Button setingBtn;
+
+    @FXML
+    private Button tiktBtn;
+
+    @FXML
+    private Button transBtn;
+
+    @FXML
+    private Button trtlBtn;
+
+    @FXML
+    void eggBtnOnAction(ActionEvent event) {
+
     }
 
     @FXML
-    void onMouseExited(MouseEvent event) {
+    void empBtnOnAction(ActionEvent event) {
 
     }
 
-    public void onMouseEntere(javafx.scene.input.MouseEvent mouseEvent) {
+    @FXML
+    void homeBtnOnAction(ActionEvent event) {
+
     }
 
-    public void onMouseExited(javafx.scene.input.MouseEvent mouseEvent) {
+    @FXML
+    void setingBtnOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void tiktBtnOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void transBtnOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void trtlBtnOnAction(ActionEvent event) {
+
     }
 }
