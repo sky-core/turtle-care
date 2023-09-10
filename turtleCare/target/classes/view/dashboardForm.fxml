@@ -5,14 +5,14 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1919.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1919.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
    <children>
       <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="406.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../assest/DashboardForm.png" />
          </image>
       </ImageView>
-      <Button fx:id="homeBtn" layoutX="108.0" layoutY="208.0" mnemonicParsing="false" onAction="#homeBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" AnchorPane.leftAnchor="108.0">
+      <Button fx:id="homeBtn" layoutX="108.0" layoutY="208.0" mnemonicParsing="false" onAction="#homeBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -74,5 +74,6 @@
             </ImageView>
          </graphic>
       </Button>
+      <AnchorPane fx:id="bodyPane" layoutX="210.0" layoutY="73.0" prefHeight="947.0" prefWidth="1603.0" />
    </children>
 </AnchorPane>

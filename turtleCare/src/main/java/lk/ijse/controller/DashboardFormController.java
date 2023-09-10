@@ -3,12 +3,12 @@ package lk.ijse.controller;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
-import lk.ijse.util.Navigation;
-import lk.ijse.util.Rout;
 
 import java.io.IOException;
+import java.util.Objects;
 
 
 public class DashboardFormController {
@@ -59,7 +59,8 @@ public class DashboardFormController {
     void homeBtnOnAction(ActionEvent event) {
         Thread thread = new Thread(() -> Platform.runLater(() -> {
             try {
-                Navigation.navigation(Rout.HOME, bodyPane);
+                bodyPane.getChildren().clear();
+                bodyPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/homeForm.fxml"))));
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
