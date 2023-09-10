@@ -3,9 +3,9 @@ package lk.ijse.controller;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 
-public class TicketPageFormController {
+public class HatchingAreaFormController {
 
     @FXML
-    private AnchorPane ticketsPane;
+    private AnchorPane hatchingAreaPane;
 
 }
