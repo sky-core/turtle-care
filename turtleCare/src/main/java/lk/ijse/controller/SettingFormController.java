@@ -3,9 +3,9 @@ package lk.ijse.controller;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 
-public class HomeFormController {
+public class SettingFormController {
 
     @FXML
-    private AnchorPane homePane;
+    private AnchorPane settingPane;
 
 }

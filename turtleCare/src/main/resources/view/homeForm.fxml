@@ -4,12 +4,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="947.0" prefWidth="1603.0" style="-fx-background-color: tranceparent;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.HomeFormController">
+<AnchorPane fx:id="homePane" prefHeight="947.0" prefWidth="1603.0" style="-fx-background-color: tranceparent;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.HomeFormController">
    <children>
       <ImageView fitHeight="947.0" fitWidth="1603.0" layoutX="600.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@../assest/bac/home%20(1).png" />
+            <Image url="@../assest/bac/home.png" />
          </image>
       </ImageView>
    </children>
