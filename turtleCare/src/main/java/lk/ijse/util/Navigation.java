@@ -15,6 +15,7 @@ public class Navigation {
         Stage window = (Stage) Navigation.root.getScene().getWindow();
         switch (rout) {
             case LOGIN -> initUi("loginForm.fxml");
+            case DASHBOARD -> initUi("dashboardForm.fxml");
             case HOME -> initUi("homeForm.fxml");
         }
     }
