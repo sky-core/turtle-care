@@ -46,13 +46,15 @@ public class DashboardFormController {
     }
 
     @FXML
-    void eggBtnOnAction(ActionEvent event) {
-
+    void eggBtnOnAction(ActionEvent event) throws IOException {
+        bodyPane.getChildren().clear();
+        bodyPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/eggsRoomForm.fxml"))));
     }
 
     @FXML
-    void empBtnOnAction(ActionEvent event) {
-
+    void empBtnOnAction(ActionEvent event) throws IOException {
+        bodyPane.getChildren().clear();
+        bodyPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/employeeDetailsForm.fxml"))));
     }
 
     @FXML
@@ -69,22 +71,26 @@ public class DashboardFormController {
     }
 
     @FXML
-    void setingBtnOnAction(ActionEvent event) {
-
+    void setingBtnOnAction(ActionEvent event) throws IOException {
+        bodyPane.getChildren().clear();
+        bodyPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/settingForm.fxml"))));
     }
 
     @FXML
-    void tiktBtnOnAction(ActionEvent event) {
-
+    void tiktBtnOnAction(ActionEvent event) throws IOException {
+        bodyPane.getChildren().clear();
+        bodyPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/ticketPageForm.fxml"))));
     }
 
     @FXML
-    void transBtnOnAction(ActionEvent event) {
-
+    void transBtnOnAction(ActionEvent event) throws IOException {
+        bodyPane.getChildren().clear();
+        bodyPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/transactionForm.fxml"))));
     }
 
     @FXML
-    void trtlBtnOnAction(ActionEvent event) {
-
+    void trtlBtnOnAction(ActionEvent event) throws IOException {
+        bodyPane.getChildren().clear();
+        bodyPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/turtleForm.fxml"))));
     }
 }
