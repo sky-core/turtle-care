@@ -4,6 +4,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.util.Navigation;
+import lk.ijse.util.Rout;
+
+import java.io.IOException;
 
 
 public class DashboardFormController {
@@ -44,7 +48,11 @@ public class DashboardFormController {
 
     @FXML
     void homeBtnOnAction(ActionEvent event) {
-
+        try {
+            Navigation.navigation(Rout.HOME,bodyPane);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
