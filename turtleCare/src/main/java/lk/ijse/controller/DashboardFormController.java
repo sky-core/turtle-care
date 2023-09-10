@@ -1,5 +1,6 @@
 package lk.ijse.controller;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -35,6 +36,14 @@ public class DashboardFormController {
 
     @FXML
     private Button trtlBtn;
+    @FXML
+    void initialize(){
+        loadUi();
+    }
+
+    private void loadUi() {
+        homeBtn.fire();
+    }
 
     @FXML
     void eggBtnOnAction(ActionEvent event) {
@@ -48,11 +57,14 @@ public class DashboardFormController {
 
     @FXML
     void homeBtnOnAction(ActionEvent event) {
-        try {
-            Navigation.navigation(Rout.HOME,bodyPane);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        Thread thread = new Thread(() -> Platform.runLater(() -> {
+            try {
+                Navigation.navigation(Rout.HOME, bodyPane);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }));
+        thread.start();
     }
 
     @FXML
