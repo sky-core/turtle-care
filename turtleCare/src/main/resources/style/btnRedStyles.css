@@ -1,6 +1,6 @@
 .button-with-style {
     -fx-background-color: rgb(255, 255, 255);
-    -fx-opacity: 0.51;
+    -fx-opacity: 0.50;
     -fx-background-radius: 15;
     -fx-border-radius: 15;
     -fx-text-fill: #000000; /* You can change the text color as needed */
