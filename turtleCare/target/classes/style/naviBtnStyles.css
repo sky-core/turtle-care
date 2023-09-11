@@ -1,16 +1,17 @@
 .button-with-style {
-    -fx-background-color: rgba(137, 214, 229, 0.5);
+    -fx-background-color: rgb(3, 4, 94);
     -fx-background-radius: 15;
     -fx-border-radius: 15;
-    -fx-text-fill: black; /* You can change the text color as needed */
+    -fx-text-fill: white; /* You can change the text color as needed */
 }
 
 /* CSS Style for the Button when Hovered */
 .button-with-style:hover {
-    -fx-background-color: rgba(137, 214, 229, 0.7);
+    -fx-background-color: rgb(80, 200, 92);
+    -fx-text-fill: black;
 }
 
 /* CSS Style for the Button when Pressed */
 .button-with-style:pressed {
-    -fx-background-color: rgba(137, 214, 229, 0.8);
+    -fx-background-color: rgb(80, 200, 92);
 }

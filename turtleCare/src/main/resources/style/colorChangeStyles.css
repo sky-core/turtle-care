@@ -1,0 +1,13 @@
+/* Styles for the pane when not hovered */
+.pane-with-style {
+    -fx-background-color: rgb(3, 4, 94); /* Default background color */
+    -fx-opacity: 0.0; /* Default opacity */
+    -fx-background-radius: 10 ;
+}
+
+/* Styles for the pane when hovered */
+.pane-with-style:hover {
+    -fx-background-color: rgb(81, 164, 202); /* New background color on hover */
+    -fx-opacity: 0.4; /* New opacity on hover */
+    -fx-background-radius: 10 ;
+}
