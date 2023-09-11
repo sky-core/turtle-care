@@ -15,17 +15,17 @@
             <Image url="@../assest/bac/turtles.png" />
          </image>
       </ImageView>
-      <Label layoutX="129.0" layoutY="345.0" text="0">
+      <Label fx:id="lblLittleTurtle" layoutX="129.0" layoutY="345.0" text="0">
          <font>
             <Font name="System Bold" size="66.0" />
          </font>
       </Label>
-      <Label layoutX="495.0" layoutY="345.0" text="0">
+      <Label fx:id="lblTurtlePatoent" layoutX="495.0" layoutY="345.0" text="0">
          <font>
             <Font name="System Bold" size="66.0" />
          </font>
       </Label>
-      <Label layoutX="873.0" layoutY="345.0" text="0.00">
+      <Label fx:id="labelFoodStock" layoutX="873.0" layoutY="345.0" text="0.00">
          <font>
             <Font name="System Bold" size="66.0" />
          </font>
@@ -34,17 +34,22 @@
       <Pane layoutX="453.0" layoutY="167.0" prefHeight="710.0" prefWidth="335.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Pane layoutX="824.0" layoutY="167.0" prefHeight="710.0" prefWidth="335.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Pane layoutX="1195.0" layoutY="167.0" prefHeight="710.0" prefWidth="335.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
-      <JFXButton buttonType="RAISED" layoutX="120.0" layoutY="800.0" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Show More Details">
+      <JFXButton fx:id="btnLTShowMore" buttonType="RAISED" layoutX="120.0" layoutY="800.0" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Show More Details">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="490.0" layoutY="800.0" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Show More Details">
+      <JFXButton fx:id="btnTPShowMore" buttonType="RAISED" layoutX="490.0" layoutY="800.0" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Show More Details">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="861.0" layoutY="800.0" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Add to Stock">
+      <JFXButton fx:id="btnAddFood" buttonType="RAISED" layoutX="861.0" layoutY="800.0" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Add to Stock">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnMSShowMore" buttonType="RAISED" layoutX="1232.0" layoutY="800.0" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Show More Details">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

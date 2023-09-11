@@ -31,7 +31,7 @@
          </font>
       </Label>
       <Pane layoutX="593.0" layoutY="152.0" prefHeight="439.0" prefWidth="406.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
-      <JFXButton fx:id="changeHeat" buttonType="RAISED" layoutX="667.0" layoutY="502.0" opacity="0.46" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Change Heat" textFill="WHITE">
+      <JFXButton fx:id="changeHeat" buttonType="RAISED" layoutX="667.0" layoutY="502.0" onAction="#changeHeatBtnOnAction" opacity="0.46" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Change Heat" textFill="WHITE">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
