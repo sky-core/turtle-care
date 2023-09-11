@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="employeePane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.EmployeeDetailsFormController">
    <children>
@@ -11,5 +14,64 @@
             <Image url="@../assest/bac/employeeD.png" />
          </image>
       </ImageView>
+      <Pane layoutX="45.0" layoutY="165.0" prefHeight="672.0" prefWidth="336.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="431.0" layoutY="164.0" prefHeight="672.0" prefWidth="336.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="825.0" layoutY="163.0" prefHeight="672.0" prefWidth="336.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="1223.0" layoutY="164.0" prefHeight="672.0" prefWidth="336.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Label fx:id="todWorkEmpid1" layoutX="1249.0" layoutY="299.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="todWorkEmpid2" layoutX="1249.0" layoutY="339.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="todWorkEmpid3" layoutX="1249.0" layoutY="379.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="todWorkEmpid4" layoutX="1249.0" layoutY="419.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="todWorkEmpid5" layoutX="1249.0" layoutY="459.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="todWorkEmpid6" layoutX="1249.0" layoutY="499.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="todWorkEmpid7" layoutX="1249.0" layoutY="539.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="todWorkEmpid8" layoutX="1249.0" layoutY="579.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="todWorkEmpid9" layoutX="1249.0" layoutY="619.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="todWorkEmpid10" layoutX="1249.0" layoutY="659.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="todWorkEmpid11" layoutX="1249.0" layoutY="699.0" prefHeight="35.0" prefWidth="82.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
