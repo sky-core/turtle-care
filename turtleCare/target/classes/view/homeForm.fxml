@@ -15,73 +15,75 @@
             <Image url="@../assest/bac/home.png" />
          </image>
       </ImageView>
-      <Label layoutX="149.0" layoutY="371.0" text="Div 00">
+      <Label fx:id="divisionNumber" layoutX="149.0" layoutY="371.0" text="Div 00">
          <font>
             <Font name="System Bold" size="34.0" />
          </font>
       </Label>
-      <Label layoutX="149.0" layoutY="439.0" text="00 DAYS">
+      <Label fx:id="daysForHatch" layoutX="149.0" layoutY="439.0" text="00 DAYS">
          <font>
             <Font name="System Bold" size="40.0" />
          </font>
       </Label>
-      <Label layoutX="684.0" layoutY="419.0" text="0.00">
+      <Label fx:id="eggRoomCelcius" layoutX="684.0" layoutY="419.0" text="0.00">
          <font>
             <Font name="System Bold" size="45.0" />
          </font>
       </Label>
-      <Pane layoutX="591.0" layoutY="152.0" prefHeight="439.0" prefWidth="406.0" />
+      <Pane layoutX="593.0" layoutY="152.0" prefHeight="439.0" prefWidth="406.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <JFXButton fx:id="changeHeat" buttonType="RAISED" layoutX="667.0" layoutY="502.0" opacity="0.46" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Change Heat" textFill="WHITE">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </JFXButton>
-      <Label layoutX="1213.0" layoutY="409.0" text="0">
+      <Label fx:id="inShowRoom" layoutX="1213.0" layoutY="409.0" text="0">
          <font>
             <Font name="System Bold" size="50.0" />
          </font>
       </Label>
-      <Label layoutX="1315.0" layoutY="409.0" text="100">
+      <Label fx:id="spaceShowRoom" layoutX="1315.0" layoutY="409.0" text="100">
          <font>
             <Font name="System Bold" size="50.0" />
          </font>
       </Label>
-      <Label layoutX="243.0" layoutY="749.0" text="name">
+      <Label fx:id="donName1" layoutX="243.0" layoutY="749.0" text="name">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="243.0" layoutY="809.0" text="name">
+      <Label fx:id="donName2" layoutX="243.0" layoutY="809.0" text="name">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="603.0" layoutY="750.0" opacity="0.5" text="Rs.0.00">
+      <Label fx:id="donPrice1" layoutX="603.0" layoutY="750.0" opacity="0.5" text="Rs.0.00">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="603.0" layoutY="810.0" opacity="0.5" text="Rs.0.00">
+      <Label fx:id="donPrice2" layoutX="603.0" layoutY="810.0" opacity="0.5" text="Rs.0.00">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="392.0" layoutY="866.0" opacity="0.79" text="View More">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="1462.0" layoutY="750.0" opacity="0.5" text="0">
+      <Label fx:id="todCusCount" layoutX="1462.0" layoutY="750.0" opacity="0.5" text="0">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="1372.0" layoutY="810.0" opacity="0.5" text="Rs. 0.00">
+      <Label fx:id="todIncome" layoutX="1372.0" layoutY="810.0" opacity="0.5" text="Rs. 0.00">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
       <Pane layoutX="81.0" layoutY="152.0" prefHeight="439.0" prefWidth="406.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
-      <Pane layoutX="1104.0" layoutY="152.0" prefHeight="439.0" prefWidth="406.0" />
+      <Pane layoutX="1105.0" layoutY="149.0" prefHeight="439.0" prefWidth="406.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="77.0" layoutY="717.0" prefHeight="188.0" prefWidth="711.5" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Label fx:id="viewMoreDon" layoutX="392.0" layoutY="866.0" opacity="0.79" text="View More">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="850.0" layoutY="717.0" prefHeight="188.0" prefWidth="711.5" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
    </children>
 </AnchorPane>
