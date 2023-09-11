@@ -16,6 +16,15 @@ public class EmployeeDetailsFormController {
     private Pane employeeName;
 
     @FXML
+    private Pane attendence;
+
+    @FXML
+    private Pane salaryDetails;
+
+    @FXML
+    private Pane tWEmployeeId;
+
+    @FXML
     private AnchorPane employeePane;
 
     @FXML
@@ -57,4 +66,9 @@ public class EmployeeDetailsFormController {
         employeePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/employeeNameForm.fxml"))));
     }
 
+    @FXML
+    void attendenceBtnOnAction(MouseEvent event) throws IOException {
+        employeePane.getChildren().clear();
+        employeePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/attendenceSheetForm.fxml"))));
+    }
 }
