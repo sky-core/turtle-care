@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="eggsRoomPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.EggsRoomFormController">
    <children>
@@ -12,5 +16,33 @@
             <Image url="@../assest/bac/eggsRoom.png" />
          </image>
       </ImageView>
+      <Label fx:id="temperatureShowLbl" layoutX="96.0" layoutY="319.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="eggsInStock" layoutX="646.0" layoutY="314.0" text="460">
+         <font>
+            <Font name="System Bold" size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="numberOfDaysForHatch" layoutX="1196.0" layoutY="223.0" text="0 days">
+         <font>
+            <Font name="System Bold" size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="divisionOfHatch" layoutX="1196.0" layoutY="339.0" text="Div 0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <JFXSlider fx:id="sliderOfControlTemp" layoutX="441.0" layoutY="729.0" majorTickUnit="1.0" max="40.0" min="5.0" minorTickCount="5" prefHeight="129.0" prefWidth="691.0" showTickLabels="true" showTickMarks="true" value="16.2">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXSlider>
+      <Pane layoutX="53.0" layoutY="136.0" prefHeight="553.0" prefWidth="407.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="600.0" layoutY="137.0" prefHeight="553.0" prefWidth="407.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="1144.0" layoutY="140.0" prefHeight="553.0" prefWidth="407.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
    </children>
 </AnchorPane>
