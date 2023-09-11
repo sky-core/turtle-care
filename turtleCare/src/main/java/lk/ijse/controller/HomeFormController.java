@@ -1,9 +1,14 @@
 package lk.ijse.controller;
 
 import com.jfoenix.controls.JFXButton;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
+import java.util.Objects;
 
 public class HomeFormController {
 
@@ -49,4 +54,9 @@ public class HomeFormController {
     @FXML
     private Label viewMoreDon;
 
+    @FXML
+    void changeHeatBtnOnAction(ActionEvent event) throws IOException {
+        homePane.getChildren().clear();
+        homePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/eggsRoomForm.fxml"))));
+    }
 }

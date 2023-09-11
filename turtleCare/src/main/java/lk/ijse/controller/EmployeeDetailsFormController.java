@@ -1,10 +1,19 @@
 package lk.ijse.controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
+
+import java.io.IOException;
+import java.util.Objects;
 
 public class EmployeeDetailsFormController {
+
+    @FXML
+    private Pane employeeName;
 
     @FXML
     private AnchorPane employeePane;
@@ -41,5 +50,11 @@ public class EmployeeDetailsFormController {
 
     @FXML
     private Label todWorkEmpid9;
+
+    @FXML
+    void employeeNameBtnOnAction(MouseEvent event) throws IOException {
+        employeePane.getChildren().clear();
+        employeePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/employeeNameForm.fxml"))));
+    }
 
 }
