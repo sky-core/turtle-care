@@ -15,7 +15,7 @@
             <Image url="@../assest/bac/setting.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="logOutbtn" buttonType="RAISED" layoutX="845.0" layoutY="795.0" prefHeight="46.0" prefWidth="341.0" styleClass="button-with-style" stylesheets="@../style/whiRedBtnStyles.css" text="Log Out">
+      <JFXButton fx:id="logOutbtn" buttonType="RAISED" layoutX="845.0" layoutY="795.0" onAction="#logOutBtnAction" prefHeight="46.0" prefWidth="341.0" styleClass="button-with-style" stylesheets="@../style/whiRedBtnStyles.css" text="Log Out">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
