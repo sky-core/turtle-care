@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="salaryDetailsPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SalaryDetailsFormController">
    <children>
@@ -20,5 +26,240 @@
       <Pane layoutX="372.0" layoutY="760.0" prefHeight="107.0" prefWidth="114.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Pane layoutX="225.0" layoutY="760.0" prefHeight="107.0" prefWidth="114.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Pane layoutX="75.0" layoutY="760.0" prefHeight="107.0" prefWidth="114.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Label layoutX="147.0" layoutY="252.0" prefHeight="58.0" prefWidth="24.0" text="0" textFill="#023e8a">
+         <font>
+            <Font name="System Bold" size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="252.0" prefHeight="58.0" prefWidth="24.0" text="0" textFill="#023e8a">
+         <font>
+            <Font name="System Bold" size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="734.0" layoutY="252.0" prefHeight="58.0" prefWidth="24.0" text="0" textFill="#023e8a">
+         <font>
+            <Font name="System Bold" size="55.0" />
+         </font>
+      </Label>
+      <BarChart layoutX="893.0" layoutY="204.0" prefHeight="200.0" prefWidth="620.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" tickLabelGap="2.0" upperBound="160000.0" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="115.0" layoutY="605.0" prefHeight="53.0" prefWidth="30.0" text="0" textFill="#000000d2">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="605.0" prefHeight="53.0" prefWidth="30.0" text="0" textFill="#000000d2">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="415.0" layoutY="605.0" prefHeight="53.0" prefWidth="30.0" text="0" textFill="#000000d2">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="415.0" layoutY="775.0" prefHeight="53.0" prefWidth="30.0" text="0" textFill="#000000d2">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="775.0" prefHeight="53.0" prefWidth="30.0" text="0" textFill="#000000d2">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="775.0" prefHeight="53.0" prefWidth="30.0" text="0" textFill="#000000d2">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="1217.0" layoutY="512.0" prefHeight="81.0" prefWidth="273.0" text="01 th of January" textFill="#023e8a">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="593.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="630.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="667.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="707.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="745.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="783.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="821.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="593.0" prefHeight="32.0" prefWidth="215.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="630.0" prefHeight="32.0" prefWidth="215.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="668.0" prefHeight="32.0" prefWidth="215.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="706.0" prefHeight="32.0" prefWidth="215.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="745.0" prefHeight="32.0" prefWidth="215.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="783.0" prefHeight="32.0" prefWidth="215.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="821.0" prefHeight="32.0" prefWidth="215.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="878.0" layoutY="593.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="878.0" layoutY="631.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="878.0" layoutY="668.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="878.0" layoutY="706.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="878.0" layoutY="744.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="878.0" layoutY="783.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="878.0" layoutY="821.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="964.0" layoutY="593.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="964.0" layoutY="629.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="964.0" layoutY="666.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="964.0" layoutY="706.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="964.0" layoutY="744.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="964.0" layoutY="783.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="964.0" layoutY="821.0" prefHeight="28.0" prefWidth="38.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="1039.0" layoutY="822.0" prefHeight="32.0" prefWidth="58.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="1039.0" layoutY="783.0" prefHeight="32.0" prefWidth="58.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="1039.0" layoutY="745.0" prefHeight="32.0" prefWidth="58.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="1039.0" layoutY="708.0" prefHeight="32.0" prefWidth="58.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="1039.0" layoutY="668.0" prefHeight="32.0" prefWidth="58.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="1039.0" layoutY="631.0" prefHeight="32.0" prefWidth="58.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="1039.0" layoutY="592.0" prefHeight="32.0" prefWidth="58.0" textFill="#000000d2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="959.0" layoutY="476.0" prefHeight="51.0" prefWidth="139.0" style="-fx-background-color: transparent;" />
+      <Pane fx:id="mo" accessibleRole="BUTTON" layoutX="1504.0" layoutY="28.0" onMouseClicked="#btnBackOnAction" prefHeight="61.0" prefWidth="59.0" />
    </children>
 </AnchorPane>
