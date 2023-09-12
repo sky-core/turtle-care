@@ -3,7 +3,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.layout.Pane?>
 
 <AnchorPane fx:id="salaryDetailsPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SalaryDetailsFormController">
    <children>
@@ -12,5 +12,13 @@
             <Image url="@../assest/bac/salaryDetails.png" />
          </image>
       </ImageView>
+      <Pane layoutX="1140.0" layoutY="660.0" prefHeight="107.0" prefWidth="425.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="1140.0" layoutY="791.0" prefHeight="107.0" prefWidth="425.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="74.0" layoutY="590.0" prefHeight="107.0" prefWidth="114.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="224.0" layoutY="590.0" prefHeight="107.0" prefWidth="114.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="372.0" layoutY="590.0" prefHeight="107.0" prefWidth="114.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="372.0" layoutY="760.0" prefHeight="107.0" prefWidth="114.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="225.0" layoutY="760.0" prefHeight="107.0" prefWidth="114.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="75.0" layoutY="760.0" prefHeight="107.0" prefWidth="114.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
    </children>
 </AnchorPane>

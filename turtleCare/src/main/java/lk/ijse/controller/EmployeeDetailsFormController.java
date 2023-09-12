@@ -71,4 +71,12 @@ public class EmployeeDetailsFormController {
         employeePane.getChildren().clear();
         employeePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/attendenceSheetForm.fxml"))));
     }
+
+    @FXML
+    void salaryDetailsBtnOnAction(MouseEvent event) throws IOException {
+        employeePane.getChildren().clear();
+        employeePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/salaryDetailsForm.fxml"))));
+    }
+
+
 }
