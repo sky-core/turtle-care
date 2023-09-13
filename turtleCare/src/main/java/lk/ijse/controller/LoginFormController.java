@@ -44,7 +44,7 @@ public class LoginFormController {
 
     @FXML
     void loginBtnOnAction(ActionEvent event) throws IOException {
-        String[][] details = JDBC.getDetails("user",5);
+        String[][] details = JDBC.getDetails("user",6);
 
         String usName = txtUsername.getText();
         String pw = txtPassword.getText();
