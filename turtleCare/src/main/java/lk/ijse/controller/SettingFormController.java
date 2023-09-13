@@ -59,21 +59,22 @@ public class SettingFormController {
     @FXML
     private TextField userName;
 
+    private String fullNameOf = "kavindu malshan jayasinghe";
+    private String passwordOf = "1125";
+    private String emailAddOf = "kavindu11250403@gmail.com";
+
     @FXML
     void logOutBtnAction(ActionEvent event) throws IOException {
-        Stage stage = (Stage) logOutbtn.getScene().getWindow();
-        stage.close();
 
-        Parent rootNode = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/loginForm.fxml")));
-
-        Scene scene = new Scene(rootNode);
-
-        stage.setTitle("Login page");
-        stage.centerOnScreen();
-        stage.setScene(scene);
-
-        stage.show();
     }
 
+    @FXML
+    void updInfoBtnOnAction(ActionEvent event) {
+        fullNameOf = fullName.getText();
 
+        LoginFormController log = new LoginFormController();
+
+        log.setPassword(pwSet.getText());
+        log.setUsername(userName.getText());
+    }
 }

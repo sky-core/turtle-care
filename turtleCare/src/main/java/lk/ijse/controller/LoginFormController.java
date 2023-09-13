@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -33,9 +34,11 @@ public class LoginFormController {
     @FXML
     private Label btnForgotPw;
 
+    @FXML
+    private Button btnFaceUnlock;
 
-    private final String username = "kavindu";
-    private final String password = "1125";
+    private String username = "kavindu";
+    private String password = "1125";
 
     @FXML
     void loginBtnOnAction(ActionEvent event) throws IOException {
@@ -55,4 +58,24 @@ public class LoginFormController {
         lognPage.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/forgotPasswordForm.fxml"))));
     }
 
+    @FXML
+    void faceUnlockBtnOnAction(ActionEvent event) {
+
+    }
+
+    public void setUsername(String username){
+        this.username = username;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
+    }
+
+    public String getUsername(){
+        return this.username;
+    }
+
+    public String getPassword(){
+        return this.password;
+    }
 }

@@ -93,4 +93,12 @@ public class DashboardFormController {
         bodyPane.getChildren().clear();
         bodyPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/turtleForm.fxml"))));
     }
+
+    public AnchorPane getRootPane(){
+        return this.rootPane;
+    }
+
+    public void setRootPane(AnchorPane rootPane){
+        this.rootPane = rootPane;
+    }
 }

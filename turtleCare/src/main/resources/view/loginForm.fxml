@@ -35,7 +35,7 @@
             <Image url="@../assest/faceIdIcon.png" />
          </image>
       </ImageView>
-      <Button layoutX="535.0" layoutY="850.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+      <Button fx:id="btnFaceUnlock" layoutX="535.0" layoutY="850.0" mnemonicParsing="false" onAction="#faceUnlockBtnOnAction" prefHeight="69.0" prefWidth="60.0" style="-fx-background-color: transparent;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

@@ -20,37 +20,37 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="updInfobtn" buttonType="RAISED" layoutX="844.0" layoutY="713.0" prefHeight="46.0" prefWidth="341.0" styleClass="button-with-style" stylesheets="@../style/btnGreenStyles.css" text="Update Info">
+      <JFXButton fx:id="updInfobtn" buttonType="RAISED" layoutX="844.0" layoutY="713.0" onAction="#updInfoBtnOnAction" prefHeight="46.0" prefWidth="341.0" styleClass="button-with-style" stylesheets="@../style/btnGreenStyles.css" text="Update Info">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
       </JFXButton>
-      <TextField fx:id="fullName" layoutX="552.0" layoutY="318.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;">
+      <TextField fx:id="fullName" layoutX="552.0" layoutY="318.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="Kavindu Malshan Jayasinghe">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="pwSet" layoutX="552.0" layoutY="446.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;">
+      <TextField fx:id="pwSet" layoutX="552.0" layoutY="446.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="1125">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="emailAdd" layoutX="552.0" layoutY="574.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;">
+      <TextField fx:id="emailAdd" layoutX="552.0" layoutY="574.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="kavindu11250403@gmail.com">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="conEmailAdd" layoutX="1163.0" layoutY="574.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;">
+      <TextField fx:id="conEmailAdd" layoutX="1163.0" layoutY="574.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="kavindu11250403@gmail.com">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="confirmPwSet" layoutX="1163.0" layoutY="446.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;">
+      <TextField fx:id="confirmPwSet" layoutX="1163.0" layoutY="446.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="1125">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="userName" layoutX="1163.0" layoutY="317.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;">
+      <TextField fx:id="userName" layoutX="1163.0" layoutY="317.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="kavindu">
          <font>
             <Font size="20.0" />
          </font>
