@@ -72,7 +72,7 @@ public class ForgotPasswordFormController {
         String[][] details = JDBC.getDetails("user",6);
 
         for (int i = 0; i < details[i].length; i++) {
-            if (details[i][5].equals(lastPw.getText())){
+            if (details[i][5].equals(lastPw.getText()) && details[i][1].equals(userName.getText())){
                 JDBC.setDetails("UPDATE turtlescare.user t\n" +
                         "SET t.lastPassword = '"+ details[i][3] +"'\n" +
                         "WHERE t.userId LIKE '"+ details[i][0] +"' ESCAPE '#'");
@@ -97,10 +97,5 @@ public class ForgotPasswordFormController {
                 wrongPw.setText("your last password is invalid");
             }
         }
-    }
-
-    @FXML
-    void OTPBtnOnAction(ActionEvent event) {
-
     }
 }
