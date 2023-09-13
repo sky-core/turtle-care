@@ -6,10 +6,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import lk.ijse.JDBC;
 
 import java.io.IOException;
+import java.sql.*;
 import java.util.Objects;
 
 public class ForgotPasswordFormController {
@@ -21,8 +26,11 @@ public class ForgotPasswordFormController {
     private AnchorPane forgetPassword;
 
     @FXML
-    void resetBtnOnAction(ActionEvent event) throws IOException {
-        Stage stage = (Stage) btnReset.getScene().getWindow();
+    private Button btnBack;
+
+    @FXML
+    void backBtnOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) btnBack.getScene().getWindow();
         stage.close();
 
         Parent rootNode = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/loginForm.fxml")));
@@ -34,6 +42,10 @@ public class ForgotPasswordFormController {
         stage.setScene(scene);
 
         stage.show();
+    }
+    @FXML
+    void resetBtnOnAction(ActionEvent event) throws IOException {
+
     }
 
 }

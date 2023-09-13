@@ -44,29 +44,12 @@ public class LoginFormController {
 
     @FXML
     void loginBtnOnAction(ActionEvent event) throws IOException {
-        String[] username = new String[2];
-        String[] password = new String[2];
-
-        try {
-            Connection connection = JDBC.getConnection();
-            String sql = "select * from user";
-            Statement statement =  connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(sql);
-
-            int i = 0;
-            while (resultSet.next()){
-                username[i] = resultSet.getString("userName");
-                password[i] = resultSet.getString("password");
-                i++;
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        String[][] details = JDBC.getDetails("user",5);
 
         String usName = txtUsername.getText();
         String pw = txtPassword.getText();
-        for (int i = 0; i < username.length; i++) {
-            if (usName.equals(username[i]) && pw.equals(password[i])) {
+        for (int i = 0; i < details.length; i++) {
+            if (usName.equals(details[i][1]) && pw.equals(details[i][3])) {
                 lognPage.getChildren().clear();
                 lognPage.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/dashboardForm.fxml"))));
             }else {
