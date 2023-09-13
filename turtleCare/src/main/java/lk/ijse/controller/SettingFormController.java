@@ -74,7 +74,6 @@ public class SettingFormController {
 
         LoginFormController log = new LoginFormController();
 
-        log.setPassword(pwSet.getText());
-        log.setUsername(userName.getText());
+
     }
 }

@@ -10,8 +10,13 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.JDBC;
 
+import javax.swing.plaf.nimbus.State;
+import java.sql.*;
 import java.io.IOException;
+import java.sql.Connection;
+import java.util.Collection;
 import java.util.Objects;
 
 public class LoginFormController {
@@ -37,18 +42,36 @@ public class LoginFormController {
     @FXML
     private Button btnFaceUnlock;
 
-    private String username = "kavindu";
-    private String password = "1125";
-
     @FXML
     void loginBtnOnAction(ActionEvent event) throws IOException {
+        String[] username = new String[2];
+        String[] password = new String[2];
+
+        try {
+            Connection connection = JDBC.getConnection();
+            String sql = "select * from user";
+            Statement statement =  connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+
+            int i = 0;
+            while (resultSet.next()){
+                username[i] = resultSet.getString("userName");
+                password[i] = resultSet.getString("password");
+                i++;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
         String usName = txtUsername.getText();
         String pw = txtPassword.getText();
-        if (usName.equals(username) && pw.equals(password)) {
-            lognPage.getChildren().clear();
-            lognPage.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/dashboardForm.fxml"))));
-        }else {
-            inUserPw.setText("Invalid username or password");
+        for (int i = 0; i < username.length; i++) {
+            if (usName.equals(username[i]) && pw.equals(password[i])) {
+                lognPage.getChildren().clear();
+                lognPage.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/dashboardForm.fxml"))));
+            }else {
+                inUserPw.setText("Invalid username or password");
+            }
         }
     }
 
@@ -61,21 +84,5 @@ public class LoginFormController {
     @FXML
     void faceUnlockBtnOnAction(ActionEvent event) {
 
-    }
-
-    public void setUsername(String username){
-        this.username = username;
-    }
-
-    public void setPassword(String password){
-        this.password = password;
-    }
-
-    public String getUsername(){
-        return this.username;
-    }
-
-    public String getPassword(){
-        return this.password;
     }
 }
