@@ -39,6 +39,7 @@ public class EggsRoomFormController {
 
                 if (resultSet.next()) {
                     Date smallestDate = resultSet.getDate("hatchingDate");
+                    System.out.println(smallestDate);
                 }
             }
         } catch (SQLException e) {

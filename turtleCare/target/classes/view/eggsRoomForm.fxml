@@ -41,7 +41,7 @@
             <Cursor fx:constant="OPEN_HAND" />
          </cursor>
       </JFXSlider>
-      <Pane layoutX="53.0" layoutY="136.0" prefHeight="553.0" prefWidth="407.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="53.0" layoutY="136.0" onMouseClicked="#onmouseclick" prefHeight="553.0" prefWidth="407.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Pane layoutX="600.0" layoutY="137.0" prefHeight="553.0" prefWidth="407.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Pane layoutX="1144.0" layoutY="140.0" prefHeight="553.0" prefWidth="407.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
    </children>
