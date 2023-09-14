@@ -1,16 +1,20 @@
 package lk.ijse.controller;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXSlider;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.Objects;
+import java.util.ResourceBundle;
 
-public class HomeFormController {
+public class HomeFormController implements Initializable {
 
     @FXML
     private JFXButton changeHeat;
@@ -58,5 +62,11 @@ public class HomeFormController {
     void changeHeatBtnOnAction(ActionEvent event) throws IOException {
         homePane.getChildren().clear();
         homePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/eggsRoomForm.fxml"))));
+    }
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }

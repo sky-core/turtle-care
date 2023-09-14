@@ -34,6 +34,32 @@ public class EggsRoomFormController implements Initializable {
 
     @FXML
     private Label temperatureShowLbl;
+    public static String formattedValue;
+
+    public void setValueOfSliderOfControlTemp(){
+        temperatureShowLbl.setText(sliderOfControlTemp.getValue()+"");
+        sliderOfControlTemp.valueProperty().addListener((observable, oldValue, newValue) -> {
+            // Update the label text whenever the slider value changes
+            formattedValue = String.format("%.2f", newValue.doubleValue());
+            temperatureShowLbl.setText(formattedValue);
+        });
+    }
+
+    public void calculateAmountOfEggs() {
+        String sql = "SELECT SUM(numberOfEggs) AS column_sum FROM hatchery";
+
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/turtlescare", "root", "Kavindu@1125");
+             PreparedStatement preparedStatement = connection.prepareStatement(sql);
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+
+            if (resultSet.next()) {
+                int sum = resultSet.getInt("column_sum");
+                eggsInStock.setText(sum + "");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void findNumberOfDaysForTheHatch(){
         String[][] details = JDBC.getDetails("hatchery",4);
@@ -71,5 +97,7 @@ public class EggsRoomFormController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         findNumberOfDaysForTheHatch();
+        calculateAmountOfEggs();
+        setValueOfSliderOfControlTemp();
     }
 }
