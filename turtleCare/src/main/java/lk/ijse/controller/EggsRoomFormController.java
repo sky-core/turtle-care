@@ -42,6 +42,7 @@ public class EggsRoomFormController implements Initializable {
             // Update the label text whenever the slider value changes
             formattedValue = String.format("%.2f", newValue.doubleValue());
             temperatureShowLbl.setText(formattedValue);
+            JDBC.setDetails("UPDATE turtlescare.hatchery t\n" + "SET t.temperature = "+formattedValue);
         });
     }
 
@@ -62,7 +63,7 @@ public class EggsRoomFormController implements Initializable {
     }
 
     public void findNumberOfDaysForTheHatch(){
-        String[][] details = JDBC.getDetails("hatchery",4);
+        String[][] details = JDBC.getDetails("hatchery",5);
         long dateDifference = 0;
 
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/turtlescare", "root", "Kavindu@1125")) {
@@ -98,6 +99,8 @@ public class EggsRoomFormController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         findNumberOfDaysForTheHatch();
         calculateAmountOfEggs();
+        String[][] details = JDBC.getDetails("hatchery",5);
+        sliderOfControlTemp.setValue(Double.parseDouble(details[0][4]));
         setValueOfSliderOfControlTemp();
     }
 }

@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.JDBC;
 
 import java.io.IOException;
 import java.net.URL;
@@ -67,6 +68,7 @@ public class HomeFormController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        String[][] details = JDBC.getDetails("hatchery",5);
+        eggRoomCelcius.setText(details[0][4]);
     }
 }
