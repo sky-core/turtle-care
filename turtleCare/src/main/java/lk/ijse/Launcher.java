@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import lk.ijse.controller.EggsRoomFormController;
 
 import java.util.Objects;
 
@@ -14,6 +15,7 @@ public class Launcher extends Application {
     }
     @Override
     public void start(Stage stage) throws Exception {
+
         Parent rootNode = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/loginForm.fxml")));
 
         Scene scene = new Scene(rootNode);
@@ -21,6 +23,8 @@ public class Launcher extends Application {
         stage.setTitle("Login page");
         stage.centerOnScreen();
         stage.setScene(scene);
+
+        EggsRoomFormController eggs = new EggsRoomFormController();
 
         stage.show();
     }
