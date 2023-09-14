@@ -30,11 +30,6 @@
             <Font name="System Bold" size="45.0" />
          </font>
       </Label>
-      <JFXButton fx:id="changeHeat" buttonType="RAISED" layoutX="667.0" layoutY="502.0" onAction="#changeHeatBtnOnAction" opacity="0.46" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Change Heat" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </JFXButton>
       <Label fx:id="inShowRoom" layoutX="1213.0" layoutY="409.0" text="0">
          <font>
             <Font name="System Bold" size="50.0" />
@@ -75,10 +70,8 @@
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Pane layoutX="81.0" layoutY="152.0" prefHeight="439.0" prefWidth="406.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css">
-         <children>
-            <Pane layoutX="512.0" layoutY="-1.0" prefHeight="439.0" prefWidth="406.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
-         </children></Pane>
+      <Pane layoutX="81.0" layoutY="152.0" prefHeight="439.0" prefWidth="406.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <Pane layoutX="593.0" layoutY="151.0" prefHeight="439.0" prefWidth="406.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Pane layoutX="1105.0" layoutY="149.0" prefHeight="439.0" prefWidth="406.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Pane layoutX="77.0" layoutY="717.0" prefHeight="188.0" prefWidth="711.5" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Label fx:id="viewMoreDon" layoutX="392.0" layoutY="866.0" opacity="0.79" text="View More">
@@ -87,5 +80,10 @@
          </font>
       </Label>
       <Pane layoutX="850.0" layoutY="717.0" prefHeight="188.0" prefWidth="711.5" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <JFXButton fx:id="changeHeat" buttonType="RAISED" layoutX="667.0" layoutY="502.0" onAction="#changeHeatBtnOnAction" opacity="0.46" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnGreenStyles.css" text="Change Heat" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>

@@ -2,10 +2,17 @@ package lk.ijse.controller;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.JDBC;
 
-public class TurtleFormController {
+import java.net.URL;
+import java.sql.*;
+import java.time.chrono.JapaneseDate;
+import java.util.ResourceBundle;
+
+public class TurtleFormController implements Initializable {
 
     @FXML
     private JFXButton btnAddFood;
@@ -31,4 +38,25 @@ public class TurtleFormController {
     @FXML
     private AnchorPane turtlePane;
 
+    public void calculateAmountOfTheFoodStock() {
+        String sql = "SELECT SUM(weight) AS column_sum FROM food";
+
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/turtlescare", "root", "Kavindu@1125");
+             PreparedStatement preparedStatement = connection.prepareStatement(sql);
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+
+            if (resultSet.next()) {
+                double sum = resultSet.getDouble("column_sum");
+                labelFoodStock.setText(""+sum);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        calculateAmountOfTheFoodStock();
+
+    }
 }
