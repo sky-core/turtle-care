@@ -30,27 +30,27 @@
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="pwSet" layoutX="552.0" layoutY="446.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="1125">
+      <TextField fx:id="pwSet" layoutX="552.0" layoutY="446.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="emailAdd" layoutX="552.0" layoutY="574.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="kavindu11250403@gmail.com">
+      <TextField fx:id="emailAdd" layoutX="552.0" layoutY="574.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="conEmailAdd" layoutX="1163.0" layoutY="574.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="kavindu11250403@gmail.com">
+      <TextField fx:id="conEmailAdd" layoutX="1163.0" layoutY="574.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="confirmPwSet" layoutX="1163.0" layoutY="446.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="1125">
+      <TextField fx:id="confirmPwSet" layoutX="1163.0" layoutY="446.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="userName" layoutX="1163.0" layoutY="317.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="kavindu">
+      <TextField fx:id="userName" editable="false" layoutX="1163.0" layoutY="317.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: trans;" text="kavindu">
          <font>
             <Font size="20.0" />
          </font>
@@ -75,5 +75,15 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </JFXButton>
+      <Label fx:id="pwIsNotMatched" layoutX="1169.0" layoutY="506.0" opacity="0.48" prefHeight="17.0" prefWidth="177.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailIsNotMatched1" layoutX="1169.0" layoutY="636.0" opacity="0.48" prefHeight="17.0" prefWidth="177.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
