@@ -44,7 +44,7 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnAddFood" buttonType="RAISED" layoutX="861.0" layoutY="800.0" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Add to Stock">
+      <JFXButton fx:id="btnAddFood" buttonType="RAISED" layoutX="861.0" layoutY="800.0" onAction="#addFoodBtnOnAction" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Add to Stock">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

@@ -1,15 +1,19 @@
 package lk.ijse.controller;
 
 import com.jfoenix.controls.JFXButton;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import lk.ijse.JDBC;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.time.chrono.JapaneseDate;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class TurtleFormController implements Initializable {
@@ -52,6 +56,12 @@ public class TurtleFormController implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    void addFoodBtnOnAction(ActionEvent event) throws IOException {
+        turtlePane.getChildren().clear();
+        turtlePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/addToFoodStockForm.fxml"))));
     }
 
     @Override

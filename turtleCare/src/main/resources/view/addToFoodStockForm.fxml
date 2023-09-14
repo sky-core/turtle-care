@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="addFoodPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AddToFoodStockFormController">
+   <children>
+      <ImageView fitHeight="947.0" fitWidth="1603.0" layoutX="679.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assest/bac/addToFoodStock.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnAddFood" buttonType="RAISED" layoutX="814.0" layoutY="621.0" onAction="#addFoodBtnOnAction" prefHeight="46.0" prefWidth="124.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnCancelToFood" layoutX="664.0" layoutY="623.0" onAction="#cancelBtnOnAction" opacity="0.0" prefHeight="46.0" prefWidth="124.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="categoryOfFood" layoutX="702.0" layoutY="393.0" prefHeight="53.0" prefWidth="149.0" style="-fx-background-color: trans;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="amountOfWeight" layoutX="702.0" layoutY="512.0" prefHeight="53.0" prefWidth="149.0" style="-fx-background-color: trans;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
