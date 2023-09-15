@@ -1,19 +1,26 @@
 package lk.ijse.controller;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXSlider;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
+import lk.ijse.ArduinoController;
 import lk.ijse.JDBC;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.Objects;
 import java.util.ResourceBundle;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class EggsRoomFormController implements Initializable {
 
@@ -34,10 +41,19 @@ public class EggsRoomFormController implements Initializable {
 
     @FXML
     private Label temperatureShowLbl;
+
+    @FXML
+    private JFXButton btnHatchingArea;
     public static String formattedValue;
 
+    @FXML
+    void hatchingAreaBtnOnAction(ActionEvent event) throws IOException {
+        eggsRoomPane.getChildren().clear();
+        eggsRoomPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/hatchingAreaForm.fxml"))));
+    }
+
     public void setValueOfSliderOfControlTemp(){
-        temperatureShowLbl.setText(sliderOfControlTemp.getValue()+"");
+//        temperatureShowLbl.setText(s);
         sliderOfControlTemp.valueProperty().addListener((observable, oldValue, newValue) -> {
             // Update the label text whenever the slider value changes
             formattedValue = String.format("%.2f", newValue.doubleValue());
@@ -95,12 +111,22 @@ public class EggsRoomFormController implements Initializable {
 
     }
 
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         findNumberOfDaysForTheHatch();
         calculateAmountOfEggs();
-        String[][] details = JDBC.getDetails("hatchery",5);
-        sliderOfControlTemp.setValue(Double.parseDouble(details[0][4]));
+        //sliderOfControlTemp.setValue(Double.parseDouble(details[0][4]));
         setValueOfSliderOfControlTemp();
+
+
+
+        //ArduinoController.arduinoControl();
+        String[][] details = JDBC.getDetails("hatchery",5);
+        temperatureShowLbl.setText(details[0][4]);
+
+//        ArduinoController.arduinoControl();
+//        temperatureShowLbl.setText(details[0][4]);
+
     }
 }

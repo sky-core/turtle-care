@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXSlider?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
@@ -44,5 +45,10 @@
       <Pane layoutX="53.0" layoutY="136.0" prefHeight="553.0" prefWidth="407.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Pane layoutX="600.0" layoutY="137.0" prefHeight="553.0" prefWidth="407.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
       <Pane layoutX="1144.0" layoutY="140.0" prefHeight="553.0" prefWidth="407.0" styleClass="pane-with-style" stylesheets="@../style/colorChangeStyles.css" />
+      <JFXButton fx:id="btnHatchingArea" buttonType="RAISED" layoutX="670.0" layoutY="610.0" onAction="#hatchingAreaBtnOnAction" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/whiRedBtnStyles.css" text="More Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>

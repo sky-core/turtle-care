@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="hatchingAreaPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.HatchingAreaFormController">
    <children>
@@ -11,5 +15,120 @@
             <Image url="@../assest/bac/hatchingArea.png" />
          </image>
       </ImageView>
+      <Pane layoutX="736.0" layoutY="418.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div1" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div1OnMouseEnteredAction" onMouseExited="#div1OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="526.0" layoutY="438.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div2" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div2OnMouseEnteredAction" onMouseExited="#div2OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="666.0" layoutY="548.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div3" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div3OnMouseEnteredAction" onMouseExited="#div3OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="536.0" layoutY="648.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div4" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div4OnMouseEnteredAction" onMouseExited="#div4OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="436.0" layoutY="538.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div5" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div5OnMouseEnteredAction" onMouseExited="#div5OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="296.0" layoutY="548.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div6" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div6OnMouseEnteredAction" onMouseExited="#div6OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="136.0" layoutY="478.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div7" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div7OnMouseEnteredAction" onMouseExited="#div7OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="146.0" layoutY="638.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div8" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div8OnMouseEnteredAction" onMouseExited="#div8OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="266.0" layoutY="748.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div9" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div9OnMouseEnteredAction" onMouseExited="#div9OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="426.0" layoutY="738.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div10" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div10OnMouseEnteredAction" onMouseExited="#div10OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="backBtn" layoutX="1481.0" layoutY="70.0" onAction="#backBtnOnAction" opacity="0.0" prefHeight="64.0" prefWidth="69.0" />
+      <Label fx:id="divisionNumber" layoutX="1277.0" layoutY="313.0" text="0">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <Label fx:id="eggsCount" layoutX="1210.0" layoutY="403.0" text="0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="hatchingDate" layoutX="1311.0" layoutY="471.0" prefWidth="159.0" text="0000-00-00">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Pane layoutX="816.0" layoutY="298.0" prefHeight="46.0" prefWidth="46.0">
+         <children>
+            <ImageView fx:id="div0" fitHeight="46.0" fitWidth="46.0" onMouseEntered="#div0OnMouseEnteredAction" onMouseExited="#div0OnMouseExitedAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/paveHolder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

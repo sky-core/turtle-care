@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.ArduinoController;
 import lk.ijse.JDBC;
 
 import java.io.IOException;
@@ -103,8 +104,10 @@ public class HomeFormController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        ArduinoController.arduinoControl();
         String[][] details = JDBC.getDetails("hatchery",5);
         eggRoomCelcius.setText(details[0][4]);
+        //eggRoomCelcius.setText(details[0][4]);
         findNumberOfDaysForTheHatch();
     }
 
