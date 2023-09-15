@@ -2,12 +2,13 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane fx:id="addFoodPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AddToFoodStockFormController">
    <children>
@@ -26,7 +27,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TextField fx:id="categoryOfFood" layoutX="702.0" layoutY="393.0" prefHeight="53.0" prefWidth="149.0" style="-fx-background-color: trans;">
+      <TextField fx:id="categoryOfFood" layoutX="702.0" layoutY="393.0" prefHeight="53.0" prefWidth="161.0" style="-fx-background-color: trans;">
          <font>
             <Font size="24.0" />
          </font>
@@ -36,5 +37,30 @@
             <Font size="24.0" />
          </font>
       </TextField>
+      <AnchorPane fx:id="addedSuccessfully" layoutX="945.0" layoutY="-1.0" opacity="0.0" prefHeight="109.0" prefWidth="646.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="addedSuccessfullyPane" layoutX="954.0" layoutY="3.0" opacity="0.75" prefHeight="109.0" prefWidth="646.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="96.0" layoutY="26.0" prefHeight="17.0" prefWidth="315.0" text="Added Successfully">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="56.0" prefHeight="17.0" prefWidth="315.0" text="food stock added successfully">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/correctIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="closeBtn" accessibleRole="BUTTON" fitHeight="34.0" fitWidth="31.0" layoutX="599.0" layoutY="10.0" onMouseClicked="#closeBtnclickAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
