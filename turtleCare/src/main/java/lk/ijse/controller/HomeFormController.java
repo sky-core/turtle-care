@@ -2,12 +2,16 @@ package lk.ijse.controller;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXSlider;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.util.Duration;
 import lk.ijse.ArduinoController;
 import lk.ijse.JDBC;
 
@@ -101,6 +105,15 @@ public class HomeFormController implements Initializable {
         daysForHatch.setText(dateDifference + " days");
 
     }
+
+    Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(5), new EventHandler<ActionEvent>() {
+        @Override
+        public void handle(ActionEvent event) {
+            updateLabelFromDatabase();
+        }
+    }));
+        timeline.setCycleCount(Timeline.INDEFINITE);
+        timeline.play();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
