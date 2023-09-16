@@ -2,12 +2,16 @@ package lk.ijse.controller;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXSlider;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.util.Duration;
 import lk.ijse.ArduinoController;
 import lk.ijse.JDBC;
 
@@ -119,14 +123,16 @@ public class EggsRoomFormController implements Initializable {
         //sliderOfControlTemp.setValue(Double.parseDouble(details[0][4]));
         setValueOfSliderOfControlTemp();
 
-
-
-        //ArduinoController.arduinoControl();
         String[][] details = JDBC.getDetails("hatchery",5);
         temperatureShowLbl.setText(details[0][4]);
-
-//        ArduinoController.arduinoControl();
-//        temperatureShowLbl.setText(details[0][4]);
-
+        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(2), new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String[][] details = JDBC.getDetails("hatchery",5);
+                temperatureShowLbl.setText(details[0][4]);
+            }
+        }));
+        timeline.setCycleCount(Timeline.INDEFINITE);
+        timeline.play();
     }
 }

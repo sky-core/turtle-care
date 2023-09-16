@@ -67,6 +67,7 @@ public class TurtleFormController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         calculateAmountOfTheFoodStock();
-
+        lblLittleTurtle.setText("289");
+        lblTurtlePatoent.setText("29");
     }
 }

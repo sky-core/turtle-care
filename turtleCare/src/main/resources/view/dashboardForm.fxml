@@ -22,7 +22,7 @@
          </graphic></Button>
       <Button fx:id="tiktBtn" layoutX="108.0" layoutY="304.0" mnemonicParsing="false" onAction="#tiktBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
          <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="changeTicketIcon" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assest/naviBarIcons/tickets.png" />
                </image>

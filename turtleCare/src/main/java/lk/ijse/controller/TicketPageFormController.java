@@ -2,7 +2,9 @@ package lk.ijse.controller;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
@@ -11,12 +13,14 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import lk.ijse.JDBC;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class TicketPageFormController implements Initializable {
@@ -33,9 +37,22 @@ public class TicketPageFormController implements Initializable {
     @FXML
     private AnchorPane ticketsPane;
 
+    @FXML
+    void donationOnAction(ActionEvent event) throws IOException {
+        ticketsPane.getChildren().clear();
+        ticketsPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/addNewDonationForm.fxml"))));
+    }
+
+    void findEarningsFromTickets(){
+        int count = JDBC.checkRowsCount("ticket");
+        double fullIncome = count * 300;
+
+        earningsFromTicket.setText("Rs."+fullIncome);
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        findEarningsFromTickets();
         XYChart.Series series = new XYChart.Series();
         series.getData().add(new XYChart.Data("1",500));
         series.getData().add(new XYChart.Data("2",650));

@@ -29,17 +29,17 @@
           <NumberAxis minorTickCount="0" side="LEFT" upperBound="1000.0" />
         </yAxis>
       </BarChart>
-      <Label fx:id="earningsFromTicket" layoutX="118.0" layoutY="384.0" prefHeight="85.0" prefWidth="327.0" text=" Rs. 0.00">
+      <Label fx:id="earningsFromTicket" layoutX="135.0" layoutY="374.0" prefHeight="85.0" prefWidth="327.0" text=" Rs. 0.00">
          <font>
-            <Font name="System Bold" size="50.0" />
+            <Font name="System Bold" size="42.0" />
          </font>
       </Label>
-      <Label layoutX="164.0" layoutY="492.0" prefHeight="37.0" prefWidth="208.0" text="0 % since last month" textFill="WHITE">
+      <Label layoutX="159.0" layoutY="492.0" prefHeight="37.0" prefWidth="225.0" text="10 % since last month" textFill="WHITE">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <JFXButton fx:id="newDon" buttonType="RAISED" layoutX="136.0" layoutY="830.0" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="New Donation">
+      <JFXButton fx:id="newDon" buttonType="RAISED" layoutX="136.0" layoutY="830.0" onAction="#donationOnAction" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="New Donation">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

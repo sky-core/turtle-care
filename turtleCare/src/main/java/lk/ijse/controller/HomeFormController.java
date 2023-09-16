@@ -106,22 +106,29 @@ public class HomeFormController implements Initializable {
 
     }
 
-    Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(5), new EventHandler<ActionEvent>() {
-        @Override
-        public void handle(ActionEvent event) {
-            updateLabelFromDatabase();
-        }
-    }));
-        timeline.setCycleCount(Timeline.INDEFINITE);
-        timeline.play();
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        String[][] donationDetails = JDBC.getDetails("donation",4);
+        donPrice1.setText("Rs. "+donationDetails[donationDetails.length-1][1]);
+        donName1.setText(donationDetails[donationDetails.length-1][3]);
+        donPrice2.setText("Rs. "+donationDetails[donationDetails.length-2][1]);
+        donName2.setText(donationDetails[donationDetails.length-2][3]);
+
+        findNumberOfDaysForTheHatch();
+        //eggRoomCelcius.setText(details[0][4]);
+        //eggRoomCelcius.setText(details[0][4]);
         ArduinoController.arduinoControl();
+
         String[][] details = JDBC.getDetails("hatchery",5);
         eggRoomCelcius.setText(details[0][4]);
-        //eggRoomCelcius.setText(details[0][4]);
-        findNumberOfDaysForTheHatch();
+        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(2), new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String[][] details = JDBC.getDetails("hatchery",5);
+                eggRoomCelcius.setText(details[0][4]);
+            }
+        }));
+        timeline.setCycleCount(Timeline.INDEFINITE);
+        timeline.play();
     }
-
 }
