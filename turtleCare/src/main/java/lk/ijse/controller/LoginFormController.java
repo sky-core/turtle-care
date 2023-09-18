@@ -10,13 +10,10 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.FaceDetectionExample;
 import lk.ijse.JDBC;
 
-import javax.swing.plaf.nimbus.State;
-import java.sql.*;
 import java.io.IOException;
-import java.sql.Connection;
-import java.util.Collection;
 import java.util.Objects;
 
 public class LoginFormController {
@@ -66,6 +63,6 @@ public class LoginFormController {
 
     @FXML
     void faceUnlockBtnOnAction(ActionEvent event) {
-
+        FaceDetectionExample.faceDetection();
     }
 }

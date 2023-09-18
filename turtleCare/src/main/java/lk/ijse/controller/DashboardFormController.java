@@ -4,16 +4,20 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-
 import java.io.IOException;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
+import java.util.ResourceBundle;
 
 
-public class DashboardFormController {
+public class DashboardFormController{
     @FXML
     private AnchorPane rootPane;
     @FXML
@@ -84,8 +88,8 @@ public class DashboardFormController {
 
     @FXML
     void tiktBtnOnAction(ActionEvent event) throws IOException {
-//        ImageView image = new ImageView("@../assest/naviBarIcons/tickets.png");
-//        changeTicketIcon.setImage(new ImageView("@../assest/naviBarIcons/tickets.png"));
+//        Image newImage = new Image("assest/naviBarIcons/tickets2.png");
+//        changeTicketIcon.setImage(newImage);
         bodyPane.getChildren().clear();
         bodyPane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/ticketPageForm.fxml"))));
     }

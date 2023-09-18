@@ -1,4 +1,4 @@
-package lk.ijse.controller;
+package lk.ijse.controller.addFiles;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;

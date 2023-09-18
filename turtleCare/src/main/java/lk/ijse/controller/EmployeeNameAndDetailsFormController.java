@@ -1,10 +1,14 @@
 package lk.ijse.controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
-public class EmployeeNameAndDetailsFormController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class EmployeeNameAndDetailsFormController implements Initializable {
 
     @FXML
     private ImageView btnBack;
@@ -27,4 +31,9 @@ public class EmployeeNameAndDetailsFormController {
     @FXML
     private TextField joinedDate;
 
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+    }
 }

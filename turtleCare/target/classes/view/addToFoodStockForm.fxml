@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="addFoodPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AddToFoodStockFormController">
+<AnchorPane fx:id="addFoodPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.addFiles.AddToFoodStockFormController">
    <children>
       <ImageView fitHeight="947.0" fitWidth="1603.0" layoutX="679.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>

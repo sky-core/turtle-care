@@ -85,5 +85,15 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </JFXButton>
+      <Label fx:id="statusOfDay" layoutX="78.0" layoutY="46.0" prefHeight="79.0" prefWidth="534.0" text="Good ">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeOfNow" layoutX="1297.0" layoutY="16.0" prefHeight="119.0" prefWidth="258.0">
+         <font>
+            <Font name="System Bold" size="49.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

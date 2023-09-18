@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane fx:id="addDonationPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AddNewDonationFormController">
+<AnchorPane fx:id="addDonationPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.addFiles.AddNewDonationFormController">
    <children>
       <ImageView fitHeight="947.0" fitWidth="1603.0" layoutX="499.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>

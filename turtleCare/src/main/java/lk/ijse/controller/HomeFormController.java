@@ -1,7 +1,7 @@
 package lk.ijse.controller;
 
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXSlider;
+import javafx.animation.AnimationTimer;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -68,6 +68,12 @@ public class HomeFormController implements Initializable {
     private Label viewMoreDon;
 
     @FXML
+    private Label statusOfDay;
+
+    @FXML
+    private Label timeOfNow;
+
+    @FXML
     void changeHeatBtnOnAction(ActionEvent event) throws IOException {
         homePane.getChildren().clear();
         homePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/eggsRoomForm.fxml"))));
@@ -108,6 +114,35 @@ public class HomeFormController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        AnimationTimer timer = new AnimationTimer() {
+            @Override
+            public void handle(long now) {
+                // Get the current time
+                java.time.LocalTime currentTime = java.time.LocalTime.now();
+
+                // Format the time as a string (e.g., "HH:mm:ss")
+                String formattedTime = currentTime.format(java.time.format.DateTimeFormatter.ofPattern("HH:mm:ss"));
+                String timeOfDay;
+                int hour = currentTime.getHour();
+                if (hour >= 6 && hour < 12) {
+                    timeOfDay = "Morning";
+                } else if (hour >= 12 && hour < 16) {
+                    timeOfDay = "Afternoon";
+                } else if (hour >= 16 && hour < 18){
+                    timeOfDay = "Evening";
+                } else {
+                    timeOfDay = "Night";
+                }
+
+                // Update the Label with the formatted time
+                timeOfNow.setText(formattedTime);
+                statusOfDay.setText("Good "+timeOfDay+","+"Kavindu");
+            }
+        };
+        timer.start();
+
+
+
         String[][] donationDetails = JDBC.getDetails("donation",4);
         donPrice1.setText("Rs. "+donationDetails[donationDetails.length-1][1]);
         donName1.setText(donationDetails[donationDetails.length-1][3]);
@@ -115,8 +150,6 @@ public class HomeFormController implements Initializable {
         donName2.setText(donationDetails[donationDetails.length-2][3]);
 
         findNumberOfDaysForTheHatch();
-        //eggRoomCelcius.setText(details[0][4]);
-        //eggRoomCelcius.setText(details[0][4]);
         ArduinoController.arduinoControl();
 
         String[][] details = JDBC.getDetails("hatchery",5);
