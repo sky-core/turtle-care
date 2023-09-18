@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="turtlePatientPane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.TurtlePatientFormController">
+   <children>
+      <ImageView fitHeight="947.0" fitWidth="1603.0" layoutX="444.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assest/bac/turtlePatientPage.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="patientPane1" layoutX="82.0" layoutY="190.0" onMouseEntered="#patientPane1OnMouseEntered" onMouseExited="#patientPane1OnMouseExited" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fx:id="imageViewOfPane1" fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="patientPane2" layoutX="82.0" layoutY="233.0" onMouseEntered="#patientPane2OnMouseEntered" onMouseExited="#patientPane2OnMouseExited" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fx:id="imageViewOfPane2" fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="276.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="319.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="362.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="405.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="448.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="491.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="534.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="577.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="620.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="663.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="706.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="749.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="792.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="82.0" layoutY="835.0" prefHeight="42.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/bac/stockAdd/patientVec.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="4.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
