@@ -14,12 +14,14 @@ import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 import lk.ijse.ArduinoController;
 import lk.ijse.JDBC;
+import lk.ijse.QrCodeReader.QrCodeScanner;
 
 import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
@@ -137,6 +139,13 @@ public class HomeFormController implements Initializable {
                 // Update the Label with the formatted time
                 timeOfNow.setText(formattedTime);
                 statusOfDay.setText("Good "+timeOfDay+","+"Kavindu");
+
+                ArrayList arrayList = QrCodeScanner.scannedValues;
+
+                int arrayListLength = arrayList.size();
+
+                inShowRoom.setText("" + arrayListLength);
+                spaceShowRoom.setText("" + (100 - arrayListLength));
             }
         };
         timer.start();

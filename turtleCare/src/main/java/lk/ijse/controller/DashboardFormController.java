@@ -4,20 +4,20 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.QrCodeReader.QrCodeScanner;
+
 import java.io.IOException;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Objects;
-import java.util.ResourceBundle;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 
 public class DashboardFormController{
+    private ExecutorService qrScannerExecutor;
+
     @FXML
     private AnchorPane rootPane;
     @FXML
@@ -49,6 +49,14 @@ public class DashboardFormController{
     @FXML
     void initialize(){
         loadUi();
+        startQRScanner();
+    }
+
+    private void startQRScanner() {
+        qrScannerExecutor = Executors.newSingleThreadExecutor();
+        qrScannerExecutor.execute(() -> {
+            QrCodeScanner.qrCodeScan(); // Run the QR code scanning process continuously
+        });
     }
 
     private void loadUi() {
