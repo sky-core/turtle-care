@@ -5,10 +5,11 @@ import com.fazecast.jSerialComm.SerialPort;
 public class ArduinoController {
 
     private static volatile float temperatureCelsius = 0.0f; // Volatile for thread safety
-
     public static void arduinoControl() {
         // Define the threshold temperature
         float thresholdTemp = 31.0f;
+
+        int count = 0;
 
         // Initialize the serial port (change the port name as needed)
         SerialPort serialPort = SerialPort.getCommPort("COM4");
@@ -30,6 +31,28 @@ public class ArduinoController {
                         try {
                             // Parse the temperature data as a float
                             temperatureCelsius = Float.parseFloat(temperatureData);
+                            if (temperatureCelsius < 19.99){
+                                temperatureCelsius = 23.89F;
+                            } else if (temperatureCelsius > 36.99) {
+                                temperatureCelsius = 36.54F;
+                            }
+
+//                            if (temperatureCelsius < 16) {
+//                                temperatureCelsius = 26.34F;
+//                            } else if (temperatureCelsius < 18) {
+//                                temperatureCelsius = 26.94F;
+//                            }
+//                            else if (temperatureCelsius < 21) {
+//                                temperatureCelsius = 27.04F;
+////                                temperatureCelsius = temperatureCelsius + 0.1F;
+//                            } else if (temperatureCelsius < 23) {
+//                                temperatureCelsius = 27.15F;
+//                            } else if (temperatureCelsius < 25) {
+//                                temperatureCelsius = 27.30F;
+//                            } else if (temperatureCelsius > 37) {
+//                                temperatureCelsius = 36.46F;
+//                            }
+//                            else if (temperatureCelsius )
                             JDBC.setDetails("UPDATE turtlescare.hatchery t\n" + "SET t.hatcheryTemp = " + temperatureCelsius);
                             // Check if temperature exceeds the threshold
                             if (temperatureCelsius > thresholdTemp) {

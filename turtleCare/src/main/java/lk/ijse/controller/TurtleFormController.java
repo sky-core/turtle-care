@@ -68,6 +68,12 @@ public class TurtleFormController implements Initializable {
         turtlePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/addToFoodStockForm.fxml"))));
     }
 
+    @FXML
+    void MSShowmoredetailsBtnOnAction(ActionEvent event) throws IOException {
+        turtlePane.getChildren().clear();
+        turtlePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/medicineForm.fxml"))));
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         calculateAmountOfTheFoodStock();

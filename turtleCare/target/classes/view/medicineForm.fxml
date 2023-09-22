@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane fx:id="medicinePane" prefHeight="947.0" prefWidth="1603.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.MedicineFormController">
    <children>
@@ -12,5 +13,10 @@
             <Image url="@../assest/bac/medicine.png" />
          </image>
       </ImageView>
+      <JFXButton fx:id="bckBtn" layoutX="1488.0" layoutY="52.0" onAction="#backOnAction" opacity="0.0" prefHeight="62.0" prefWidth="59.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>

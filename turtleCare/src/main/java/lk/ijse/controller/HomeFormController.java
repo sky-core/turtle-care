@@ -163,14 +163,50 @@ public class HomeFormController implements Initializable {
 
         String[][] details = JDBC.getDetails("hatchery",5);
         eggRoomCelcius.setText(details[0][4]);
+
         Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(2), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 String[][] details = JDBC.getDetails("hatchery",5);
                 eggRoomCelcius.setText(details[0][4]);
+                getCountSql();
             }
         }));
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
+    }
+
+    void getCountSql(){
+        String sql = "SELECT COUNT(*) FROM ticket WHERE DATE(issueDate) = CURDATE()";
+
+        try {
+            // Establish a database connection
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/turtlescare", "root", "Kavindu@1125");
+
+            // Create a PreparedStatement
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+            // Execute the SQL query
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            // Fetch the count
+            int count = 0;
+            if (resultSet.next()) {
+                count = resultSet.getInt(1);
+            }
+
+            // Display the count
+            System.out.println("Number of records added today: " + count);
+
+            todCusCount.setText(count+"");
+            todIncome.setText("Rs."+(count * 300) + ".00");
+
+            // Close the result set, statement, and connection
+            resultSet.close();
+            preparedStatement.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

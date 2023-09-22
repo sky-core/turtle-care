@@ -13,6 +13,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import lk.ijse.JDBC;
+import lk.ijse.controller.FaceRecognizion.FaceDetectionExample;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -71,6 +72,6 @@ public class LoginFormController {
 
     @FXML
     void faceUnlockBtnOnAction(){
-
+        FaceDetectionExample.faceDetection();
     }
 }

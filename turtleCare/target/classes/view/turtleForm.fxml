@@ -49,7 +49,7 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnMSShowMore" buttonType="RAISED" layoutX="1232.0" layoutY="800.0" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Show More Details">
+      <JFXButton fx:id="btnMSShowMore" buttonType="RAISED" layoutX="1232.0" layoutY="800.0" onAction="#MSShowmoredetailsBtnOnAction" prefHeight="46.0" prefWidth="262.0" styleClass="button-with-style" stylesheets="@../style/naviBtnStyles.css" text="Show More Details">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
