@@ -14,7 +14,7 @@
       </ImageView>
       <Button fx:id="homeBtn" layoutX="108.0" layoutY="208.0" mnemonicParsing="false" onAction="#homeBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
          <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="homeImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assest/naviBarIcons/home.png" />
                </image>
@@ -31,7 +31,7 @@
       </Button>
       <Button fx:id="empBtn" layoutX="108.0" layoutY="395.0" mnemonicParsing="false" onAction="#empBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
          <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="empImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assest/naviBarIcons/emp.png" />
                </image>
@@ -40,7 +40,7 @@
       </Button>
       <Button fx:id="transBtn" layoutX="107.0" layoutY="486.0" mnemonicParsing="false" onAction="#transBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
          <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="transImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assest/naviBarIcons/transaction.png" />
                </image>
@@ -49,7 +49,7 @@
       </Button>
       <Button fx:id="eggBtn" layoutX="109.0" layoutY="579.0" mnemonicParsing="false" onAction="#eggBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
          <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="eggsImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assest/naviBarIcons/egg.png" />
                </image>
@@ -58,7 +58,7 @@
       </Button>
       <Button fx:id="trtlBtn" layoutX="108.0" layoutY="667.0" mnemonicParsing="false" onAction="#trtlBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
          <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="turtlleImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assest/naviBarIcons/turtle.png" />
                </image>
@@ -67,7 +67,7 @@
       </Button>
       <Button fx:id="setingBtn" layoutX="108.0" layoutY="921.0" mnemonicParsing="false" onAction="#setingBtnOnAction" prefHeight="70.0" prefWidth="78.0" style="-fx-background-color: tranceparent;" AnchorPane.leftAnchor="108.0">
          <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="settingImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assest/naviBarIcons/settings.png" />
                </image>

@@ -78,6 +78,6 @@ public class TurtleFormController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         calculateAmountOfTheFoodStock();
         lblLittleTurtle.setText("289");
-        lblTurtlePatoent.setText("29");
+        lblTurtlePatoent.setText("3");
     }
 }

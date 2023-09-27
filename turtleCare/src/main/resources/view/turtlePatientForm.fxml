@@ -24,7 +24,7 @@
                   <Image url="@../assest/bac/stockAdd/patientVec.png" />
                </image>
             </ImageView>
-            <Label layoutX="140.0" layoutY="4.0" text="Label">
+            <Label layoutX="140.0" layoutY="4.0" text="Honu">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -38,7 +38,7 @@
                   <Image url="@../assest/bac/stockAdd/patientVec.png" />
                </image>
             </ImageView>
-            <Label layoutX="140.0" layoutY="4.0" text="Label">
+            <Label layoutX="140.0" layoutY="4.0" text="Oak">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -52,7 +52,7 @@
                   <Image url="@../assest/bac/stockAdd/patientVec.png" />
                </image>
             </ImageView>
-            <Label layoutX="140.0" layoutY="4.0" text="Label">
+            <Label layoutX="140.0" layoutY="4.0" text="Wartotle">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
